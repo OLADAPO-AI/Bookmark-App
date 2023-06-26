@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+
+    <!------first container starts-->
+    <div class="container mx-auto flex flex-col bg-gray-300 m-12 text-gray-900 first-section p-12 rounded-md gap-3">
+        <div class="top-text-box ">
+            <p class="text-2xl font-semibold">Welcome To Your Resource Directory. Create Memories If You Wish</p>
+        </div>
+
+        <div class="create-button-box">
+            <button type="button" id="button" class="  text-lg py-3 px-6 rounded-md text-white border border-primary bg-primary
+            hover:text-primary hover:bg-transparent transition" >Create A Resource</button>
+        </div>
+    </div>
+
+    <!------first container ends-->
+
+    <!------second container starts-->
+    <div class="resources-section container mx-auto flex flex-wrap justify-between bg-gray-300 m-12 text-gray-900 first-section p-12 rounded-md gap-y-2 gap-x-2" id="resources-section">
+        
+
+       
+    </div>
+    <!------seconds container ends-->
+
+    <!------modal container starts-->
+
+    <div class="modal-overlay flex flex-row justify-center items-center invisible" id="modal-overlay">
+        <div class="modal bg-white p-6 rounded-lg w-2/6">
+            <div class="close-icon-box w-full h-auto flex flex-row justify-end py-4">
+             <i class='fa fa-times cursor-pointer' style='font-size:24px' id="close-modal-icon"></i>
+            </div>
+
+            <div class="modal-title-box w-full h-auto py-2 ">
+                <h3 class="text-black text-center text-2xl font-semibold">Create Resource</h3>
+            </div>
+
+            <div class="modal-form w-full h-auto ">
+                <form id="resource-form" class="w-full h-auto flex flex-col justify-center items-start gap-4">
+                    <div class="labelandinput text-yellow-900 gap-1">
+                        <label for="nameOfWebsite">Name Of Website</label>
+                        <input class="border w-full h-auto rounded-lg p-2 text-xs" type="text" name="nameOfWebsite" id="nameOfWebsite"  placeholder="e.g Data Analysis Website">
+                    </div>
+
+                    <div class="labelandinput text-yellow-900 gap-1">
+                        <label for="linkOfWebsite">Link Of Website</label>
+                        <input class="border w-full h-auto rounded-lg p-2 text-xs" type="text" name="linkOfWebsite" id="linkOfWebsite" placeholder="e.g https:// www.link.com">
+                    </div>
+
+                    <div class="labelandinput text-yellow-900 gap-1">
+                        <label for="descriptionOfWebsite">Description Of Website</label>
+                        <textarea class=" border w-full h-20 rounded-lg p-2 text-xs" cols="30" rows="10" name="description" id="descriptionOfWebsite" placeholder="Enter Description"></textarea>
+                    </div>
+                    
+                    <div class="submit-button-box w-full">
+                        <button type="submit" id="submitButton" class="  text-lg py-2 px-6 w-full rounded-md text-white border border-primary bg-primary
+                        hover:text-primary hover:bg-transparent transition" >Create</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!------modal container ends-->
+
+
+    <script src="custom.js"></script>
+</body>
+</html>
